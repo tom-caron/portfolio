@@ -1,0 +1,105 @@
+.hero {
+    background-image: url('public/bg_top.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Nécessaire pour le suivi de la souris */
+    overflow: hidden;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    transition: transform 0.1s ease-out;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Pour placer le canvas derrière le contenu */
+}
+
+.content {
+    position: relative; /* Pour que le contenu soit au-dessus du canvas */
+    z-index: 1;
+    padding: 20px;
+    /* Autres styles de ton contenu ici */
+}
+
+#formations{
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.formation-item {
+    width: 100%;         /* Prend 80% de la largeur */
+    margin: 20px auto; /* Centre la div et ajoute un espace vertical */
+    display: flex;      /* Utilise Flexbox pour l'alignement */
+    align-items: top;
+    text-align: center;
+}
+
+
+
+.line {
+    width: 10%;      /* Réduit la largeur de la ligne */
+    height: 1px;      /* Hauteur de la ligne */
+    background-color: #ffffff; /* Couleur de la ligne */
+    margin: 0 10px;   /* Espace autour de la ligne */
+}
+
+.formation ul {
+    list-style-type: disc; /* Type de puces pour la liste principale */
+    padding-left: 20px;    /* Espace à gauche pour les puces */
+    margin-top: 10px;      /* Espace au-dessus de la liste */
+    text-align: left;      /* Aligne le texte à gauche */
+}
+
+.formation ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.formation {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.card-project {
+    transition: transform 0.3s ease;
+}
+
+.card-project:hover {
+    transform: scale(1.05);
+}
