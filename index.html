@@ -1,11 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Hello tout le monde !
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ms-3" href="#">Mon Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">À Propos <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#formations">Formation <span class="sr-only"></span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Tom Caron, développeur web</h1>
+            <p>Bienvenue sur mon Portfolio.</p>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2>A Propos</h2>
+            <p>J'ai toujours été intéressé par l'informatique, sur ce qui se passait derrière l'écran, toutes ces questions que je me posais mon naturellement amené vers le chemin du développement !</p>
+        </div>
+    </section>
+
+    <section id="formations" class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center mb-3">
+                <h2 class="me-2">Formations</h2>
+                <i class="bi bi-mortarboard-fill" style="font-size: 2.5em;"></i>
+            </div>
+            <div class="formation-item">
+                <div class="formation">
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <h3>BTS SIO</h3>
+                    <p>BTS Service Informatique aux Organisations à St-Jo SUP au Havre.</p>
+                    <ul>
+                        <li>Option SLAM</li>
+                        <li>Stage</li>
+                    </ul>
+                    
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseThales" role="button" aria-expanded="false" aria-controls="collapseThales">
+                          Thales
+                        </a>
+                        <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseSNCF" role="button" aria-expanded="false" aria-controls="collapseSNCF">
+                          SNCF
+                        </a>
+                      </p>
+                      
+                      <div id="accordion">
+                        <div class="collapse" id="collapseThales" data-bs-parent="#accordion">
+                            <div class="card card-body text-dark">
+                              <p>Mon premier stage de ce BTS a été fait à Thales à Pont-Audemer.</p>
+                              <p>Vous pourrez y retrouver :</p>
+                              <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                  <span class="small">Rapport de stage</span>
+                                  <a href="public/rapport-de-stage-thales.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                    <i class="fas fa-download"></i> Télécharger
+                                  </a>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                  <span class="small">Suivi de stage</span>
+                                  <a href="public/carontom-suivi-stage-thales.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                    <i class="fas fa-download"></i> Télécharger
+                                  </a>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                  <span class="small">Évaluation fin de stage</span>
+                                  <a href="public/grille-evaluation-stage-thales.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                    <i class="fas fa-download"></i> Télécharger
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        <div class="collapse" id="collapseSNCF" data-bs-parent="#accordion">
+                            <div class="card card-body text-dark">
+                                <p>Mon second stage de ce BTS a été fait à la SNCF de Rouen.</p>
+                                <p>Vous pourrez y retrouver :</p>
+                                <ul class="list-unstyled">
+                                  <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small">Rapport de stage</span>
+                                    <a href="public/rapport-de-stage-sncf.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                      <i class="fas fa-download"></i> Télécharger
+                                    </a>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small">Suivi de stage</span>
+                                    <a href="public/caron_tom-suivi-stage-sncf.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                      <i class="fas fa-download"></i> Télécharger
+                                    </a>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Évaluation fin de stage</span>
+                                    <a href="public/grille-evaluation-stage-sncf.pdf" class="btn btn-secondary btn-sm px-2 py-1 small" download>
+                                      <i class="fas fa-download"></i> Télécharger
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="line"></div>
+                <div class="formation">
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <h3>Bachelor CDA</h3>
+                    <p>J'ai effectué mon Bachelor Concepteur Développeur d'Application en alternance en total distanciel.</p>
+                    <ul>
+                        <li>Iscod | Karedess</li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <div class="formation">
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h3>Master</h3>
+                    <p>J'ai continué ma lancé avec un Master Expert développeur web en alternance à Rouen.</p>
+                    <ul>
+                        <li>Ynov Campus | Magnolia</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section>
+    
+    
+
+    <section id="projects" class="projects bg-light py-5">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/tom-caron/ProjetBachelor" class="card-link text-decoration-none text-dark" target="_blank">
+                        <div class="card card-project h-100">
+                            <img src="public/projet_randomtrick.jpg" class="card-img-top w-100" style="height: 300px; object-fit: cover;" alt="Projet 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">RandomTrick</h5>
+                                <p class="card-text flex-grow-1">Application web à destination des pratiquants de parkour pour se challenger sur des acrobaties</p>
+                                <div class="tech-logos text-center my-3">
+                                    <i class="fab fa-html5 fa-3x" style="color: #e34c26; margin: 0 10px;"></i>
+                                    <i class="fab fa-css3-alt fa-3x" style="color: #1572b6; margin: 0 10px;"></i>
+                                    <i class="fab fa-js fa-3x" style="color: #f7df1e; margin: 0 10px;"></i>
+                                    <i class="fab fa-node-js fa-3x" style="color: #68a063; margin: 0 10px;"></i>
+                                    <i class="fas fa-database fa-3x" style="color: #00758f; margin: 0 10px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/tom-caron/PionEnCage" class="card-link text-decoration-none text-dark" target="_blank">
+                        <div class="card card-project h-100">
+                            <img src="public/pion_en_cage.png" class="card-img-top w-100" style="height: 300px; object-fit: cover;" alt="Projet 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Pion en cage</h5>
+                                <p class="card-text flex-grow-1">Jeu du pion en cage, le but étant d'attraper un pion grâce aux flèches directionnelles du clavier</p>
+                                <div class="tech-logos text-center my-3">
+                                    <i class="fab fa-html5 fa-3x" style="color: #e34c26; margin: 0 10px;"></i>
+                                    <i class="fab fa-css3-alt fa-3x" style="color: #1572b6; margin: 0 10px;"></i>
+                                    <i class="fab fa-js fa-3x" style="color: #f7df1e; margin: 0 10px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 border-end border-light pe-4">
+                    <h5>Liens des Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light">À Propos</a></li>
+                        <li><a href="#formations" class="text-light">Formation</a></li>
+                        <li><a href="#projects" class="text-light">Projets</a></li>
+                        <li><a href="#contact" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 mb-3 text-center">
+                    <h5>Suivez-moi</h5>
+                    <a href="https://www.linkedin.com/in/tom-caron-b3a4bb255/" class="text-light me-3" target="_blank">
+                        <i class="bi bi-linkedin" style="font-size: 2em;"></i>
+                    </a>
+                    <a href="https://github.com/tom-caron" class="text-light me-3" target="_blank">
+                        <i class="bi bi-github" style="font-size: 2em;"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
